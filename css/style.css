@@ -209,6 +209,10 @@ main {
     margin: 10px 0 0;
 }
 
+.robo-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 1600px) {
     body { 
         font-size: 14px;
@@ -229,5 +233,83 @@ main {
         width: 96vw;
         height: 80vh;
         margin: 10vh auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .robo {
+        width: 50%;
+        height: 30%;
+        left: 0%;
+        top: 80%;
+    }
+
+    .robotron {
+        display: none;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    .estatisticas {
+        position: absolute;
+        width: 50%;
+        height: 40%;
+        top: 5%;
+    }
+
+    .montador {
+        height: 100vw;
+    }
+
+    .montador-conteudo {
+        position: absolute;
+        right: 0;
+        top: 5%;
+        width: 50vw;
+        height: 65%;
+        padding: 0 5%;
+    }
+
+    .producao {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        width: 40%;
+        height: 10%;
+        padding: 0 0;
+    }
+
+    .peca-titulo {
+        display: flex;
+        text-align: center;
+        align-self: center;
+    }
+
+    .controle {
+        display: flex;
+        align-self: center;
+    }
+
+    .estatistica-mobile {
+        font-size: 2.5em;
+    }
+
+    .robo {
+        display: block;
+        width: 30%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .robo-mobile {
+        display: block;
+        position: absolute;
+        width: 60%;
+        bottom: 6vw;
+        left: -5vw;
     }
 }
